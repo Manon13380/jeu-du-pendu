@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeu du Pendu</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Le Jeu du Pendu</h1>
+    </header>
+    <main>
+        <div class="game">
+            <div class="hanged">
+            <div class="image.Container">
+                <img class="image" src="./assets/images/pendu0.png" alt="">
+            </div>
+            <div>
+                <p class="try"></p>
+            </div>
+        </div>
+        <div class="response">
+            <button onclick="start()" class="button" type="button">Commencer</button>
+            <div class="difficult">
+                <p onclick="difficultChoice(this)" class="choice">Facile</p>
+                <p onclick="difficultChoice(this)" class="choice">Moyen</p>
+                <p onclick="difficultChoice(this)" class="choice">Difficile</p>
+            </div>
+            <div class="gamePad">
+                <div class="findWordContainer">
+                    <div class="findWord">
+                        <p id="findWord"></p>
+                        <p class="word"></p>
+                    </div>
+                    <div>
+                        <p class="result"></p>
+                    </div>
+                </div>
+                <div class="letters" id="letterContainer">
+                </div>
+                <div>
+                    <button onclick="restart()" id="restart" class="button" type="button">Recommencer</button>
+                    <button onclick="next()" id="next" class="button" type="button">Mot Suivant</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="rules">
+            <p>Règles du jeu : Devine toute les lettres qui doivent composer le mot. A chaque fois que tu devine une
+                lettre, celle-ci est affichée. Dans le cas contraire, le dessin d'un pendu se met à apparaître…</p>
+        </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
